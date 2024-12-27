@@ -1,4 +1,4 @@
-import type { LicenseAttributes, LicenseData } from "../types.ts"
+import type { LicenseAttributes, LicenseData } from "../../../../types/index.ts"
 
 export default function getLicense({
 	byAttribution,

@@ -1,7 +1,7 @@
 const div = document.querySelector(".cards")
 const cards = [...document.querySelectorAll(".card")]
 
-const tagset = new Set<string>()
+const tagset = new Set()
 
 for (const card of cards) {
 	const link = card.querySelector("a")
@@ -18,13 +18,13 @@ for (const card of cards) {
 	}
 }
 
-const tags: Array<string> = [...tagset]
+const tags = [...tagset]
 
 if (tags.length) {
 	addFilterSection(tags)
 }
 
-function addFilterSection(tags: Array<string>) {
+function addFilterSection(tags) {
 	const section = document.createElement("SECTION")
 
 	section.classList.add("cards-filter")

@@ -23,7 +23,6 @@ export default function Field({
 	label,
 	labelProps = {},
 	wrapperProps = {},
-	...props
 }: Props) {
 	const helpId = help ? `${id}-help` : ""
 	const labelId = label ? `${id}-label` : ""

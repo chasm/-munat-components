@@ -3,8 +3,7 @@
 		--button-background-color,
 		var(--color-gray-1, #dfdfe2)
 	);
-	border: 2px solid
-		var(--button-border-color, var(--color-gray-7, #44444b));
+	border: 2px solid var(--button-border-color, var(--color-gray-7, #44444b));
 	border-radius: 4px;
 	color: var(--button-color, var(--color-gray-7, #44444b));
 	padding: 0.25rem 0.75rem;

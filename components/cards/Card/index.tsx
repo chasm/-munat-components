@@ -13,7 +13,6 @@ import generateShortId from "../../../utilities/generateShortId/index.ts"
 
 export type Props = JSX.HTMLAttributes<HTMLLIElement> & {
 	arrow?: ComponentChildren | undefined
-	as?: string | undefined
 	card: Card
 	footer?: ComponentChildren | undefined
 	hgroup?: JSX.HTMLAttributes<HTMLElement> | undefined
@@ -31,7 +30,6 @@ export type Props = JSX.HTMLAttributes<HTMLLIElement> & {
 export default function Card(props: Props) {
 	const {
 		arrow,
-		as = "h2",
 		card,
 		children,
 		footer,
@@ -45,8 +43,6 @@ export default function Card(props: Props) {
 		timeToRead,
 		title,
 	} = props
-
-	const Heading = as
 
 	const {
 		link: { href: linkHref, label: linkLabel, useMoreLink } = {} as CardLink,
@@ -84,13 +80,13 @@ export default function Card(props: Props) {
 										timeToRead={timeToRead}
 										{...hgroup}
 									>
-										<Heading>{ttl}</Heading>
+										<h2>{ttl}</h2>
 									</HGroup>
 								</header>
 							)
 							: (
 								<header>
-									<Heading>{ttl}</Heading>
+									<h2>{ttl}</h2>
 								</header>
 							)
 					)

@@ -4,12 +4,12 @@ import Error from "../../../widgets/Error/index.tsx"
 
 export type Props = JSX.HTMLAttributes<HTMLElement> & {
 	href?: string | undefined
-	label?: string | undefined
+	text?: string | undefined
 	useMoreLink?: boolean | undefined
 }
 
 export default function Footer(props: Props) {
-	const { children, href, label, useMoreLink } = props
+	const { children, href, text, useMoreLink } = props
 
 	return (
 		<footer class="card-footer">
@@ -20,16 +20,16 @@ export default function Footer(props: Props) {
 						? (
 							<a class="button-right" href={href}>
 								Read more
-								<span class="sr-only">of “{label}”</span> <slot name="arrow" />
+								<span class="sr-only">of “{text}”</span> <slot name="arrow" />
 							</a>
 						)
 						: (
 							<a class="button-right" href={href}>
-								{label} <slot name="arrow" />
+								{text} <slot name="arrow" />
 							</a>
 						)
 				)
-				: <Error message="Missing link label!" />}
+				: <Error message="Missing link text!" />}
 		</footer>
 	)
 }
