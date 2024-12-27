@@ -1,0 +1,9 @@
+nav.trail > ul {
+	align-items: center;
+	display: flex;
+	gap: 1rem;
+	justify-content: flex-start;
+	list-style-type: none;
+	margin-inline: 0;
+	padding-inline: 0;
+}

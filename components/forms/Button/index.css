@@ -1,0 +1,46 @@
+.button {
+	background-color: var(
+		--button-background-color,
+		var(--color-gray-1, #dfdfe2)
+	);
+	border: 2px solid
+		var(--button-border-color, var(--color-gray-7, #44444b));
+	border-radius: 4px;
+	color: var(--button-color, var(--color-gray-7, #44444b));
+	padding: 0.25rem 0.75rem;
+	letter-spacing: 0.1ch;
+	font-size: 1.25rem;
+}
+
+.button-reset {
+	background-color: var(
+		--button-reset-background-color,
+		var(--color-highlight, #aaf5a3)
+	);
+	color: var(--button-reset-color, var(--color-gray-8, #2c2c30));
+}
+
+.button-submit {
+	background-color: var(
+		--button-submit-background-color,
+		var(--color-green-shaded, #0e4e09)
+	);
+	border-color: var(
+		--button-submit-border-color,
+		var(--color-green-shaded, #0e4e09)
+	);
+	color: var(--button-submit-color, var(--color-gray-0, #fafafa));
+}
+
+.button:focus,
+.button:hover {
+	border-color: var(
+		--button-border-color-hover,
+		var(--color-green-shaded, #0e4e09)
+	);
+	background-color: var(
+		--button-background-color-hover,
+		var(--color-gray-0, #fafafa)
+	);
+	color: var(--button-color-hover, var(--color-green-shaded, #0e4e09));
+}

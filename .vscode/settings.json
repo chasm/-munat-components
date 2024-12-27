@@ -13,5 +13,14 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "files.exclude": {
+    ".vscode": true,
+    ".git": true,
+    ".gitignore": true,
+    "dev.ts": true,
+    "fresh.config.ts": true,
+    "fresh.gen.ts": true,
+    "main.ts": true
   }
 }

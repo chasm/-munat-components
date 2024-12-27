@@ -1,0 +1,22 @@
+.skip-link {
+	background-color: var(--skip-link-background-color, transparent);
+	border-radius: var(--skip-link-border-radius, 5px);
+	color: var(--skip-link-foreground-color, currentcolor);
+	left: -100000px;
+	padding: 0.1rem;
+	position: absolute;
+	top: -100000px;
+	white-space: nowrap;
+}
+
+@media screen and (width > 47rem) {
+	.skip-link:focus {
+		color: var(--skip-link-foreground-color-focus, currentcolor);
+		display: inline-block;
+		outline-offset: var(--skip-link-outline-offset, 5px);
+		outline: var(--skip-link-outline-focus, 2px solid currentcolor);
+		position: unset;
+		text-decoration: none;
+		width: auto;
+	}
+}
